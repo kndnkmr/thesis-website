@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kndnkmr.github.io/thesis-website/sitemap.xml

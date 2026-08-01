@@ -74,20 +74,35 @@ if (contactForm) {
       return;
     }
 
-    // Simulate form submission (in production, this would send to a server)
-    console.log('Form submitted:', data);
+    // Submit to Web3Forms
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
 
-    // Show success message
-    formSuccess.classList.add('show');
-    contactForm.reset();
-
-    // Scroll to success message
-    formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-
-    // Hide success message after 8 seconds
-    setTimeout(() => {
-      formSuccess.classList.remove('show');
-    }, 8000);
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData
+    })
+    .then(res => res.json())
+    .then(data => {
+      if (data.success) {
+        formSuccess.classList.add('show');
+        contactForm.reset();
+        formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        setTimeout(() => {
+          formSuccess.classList.remove('show');
+        }, 8000);
+      } else {
+        alert('Something went wrong. Please try again or contact us directly via WhatsApp.');
+      }
+    })
+    .catch(() => {
+      alert('Something went wrong. Please try again or contact us directly via WhatsApp.');
+    })
+    .finally(() => {
+      submitBtn.textContent = 'Send Enquiry';
+      submitBtn.disabled = false;
+    });
   });
 }
 

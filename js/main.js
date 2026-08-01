@@ -62,7 +62,7 @@ if (contactForm) {
     const data = Object.fromEntries(formData.entries());
 
     // Basic validation
-    if (!data.name || !data.email || !data.subject || !data.level || !data.message) {
+    if (!data.name || !data.email || !data.subject_area || !data.level || !data.message) {
       alert('Please fill in all required fields.');
       return;
     }
@@ -79,13 +79,19 @@ if (contactForm) {
     submitBtn.textContent = 'Sending...';
     submitBtn.disabled = true;
 
+    const json = JSON.stringify(Object.fromEntries(formData));
+
     fetch('https://api.web3forms.com/submit', {
       method: 'POST',
-      body: formData
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: json
     })
     .then(res => res.json())
-    .then(data => {
-      if (data.success) {
+    .then(response => {
+      if (response.success) {
         formSuccess.classList.add('show');
         contactForm.reset();
         formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });

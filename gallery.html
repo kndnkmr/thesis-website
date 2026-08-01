@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thesis Gallery - ThesisHub</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">Thesis<span>Hub</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html" class="active">Thesis Gallery</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html" class="btn btn-primary">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="nav-toggle" aria-label="Toggle navigation" role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="about-hero">
+    <div class="container">
+      <h1>Thesis Gallery</h1>
+      <p>Explore our collection of professionally written theses across multiple disciplines and academic levels.</p>
+    </div>
+  </section>
+
+  <!-- Filter & Gallery -->
+  <section class="section">
+    <div class="container">
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Subjects</button>
+        <button class="filter-btn" data-filter="computer-science">Computer Science</button>
+        <button class="filter-btn" data-filter="business">Business</button>
+        <button class="filter-btn" data-filter="engineering">Engineering</button>
+        <button class="filter-btn" data-filter="science">Science</button>
+        <button class="filter-btn" data-filter="arts">Arts &amp; Humanities</button>
+        <button class="filter-btn" data-filter="health">Health Sciences</button>
+      </div>
+
+      <!-- Thesis Grid -->
+      <div class="grid-3" id="thesis-grid">
+        <!-- Card 1 -->
+        <div class="card" data-category="computer-science">
+          <div class="card-image">&#128218;</div>
+          <div class="card-body">
+            <h3>Impact of AI on Modern Healthcare Systems</h3>
+            <p>A comprehensive analysis of artificial intelligence applications in diagnostics, patient care, and hospital management.</p>
+            <div class="card-tags">
+              <span class="tag">Computer Science</span>
+              <span class="tag">Healthcare</span>
+            </div>
+            <a href="thesis-detail.html?id=1" class="btn btn-outline">View Details</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card" data-category="business">
+          <div class="card-image">&#128200;</div>
+          <div class="card-body">
+            <h3>Sustainable Business Models in Developing Economies</h3>
+            <p>Research on how sustainable practices can drive economic growth in emerging markets while preserving resources.</p>
+            <div class="card-tags">
+              <span class="tag">Business</span>
+              <span class="tag">Economics</span>
+            </div>
+            <a href="thesis-detail.html?id=2" class="btn btn-outline">View Details</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card" data-category="science">
+          <div class="card-image">&#128300;</div>
+          <div class="card-body">
+            <h3>Climate Change Effects on Marine Biodiversity</h3>
+            <p>Examining the long-term impact of rising ocean temperatures on coral reef ecosystems and marine life.</p>
+            <div class="card-tags">
+              <span class="tag">Environmental Science</span>
+              <span class="tag">Biology</span>
+            </div>
+            <a href="thesis-detail.html?id=3" class="btn btn-outline">View Details</a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card" data-category="engineering">
+          <div class="card-image">&#9881;&#65039;</div>
+          <div class="card-body">
+            <h3>Renewable Energy Integration in Smart Grid Systems</h3>
+            <p>Analysis of challenges and solutions for integrating solar and wind energy sources into existing power grid infrastructure.</p>
+            <div class="card-tags">
+              <span class="tag">Electrical Engineering</span>
+              <span class="tag">Energy</span>
+            </div>
+            <a href="thesis-detail.html?id=4" class="btn btn-outline">View Details</a>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card" data-category="computer-science">
+          <div class="card-image">&#128187;</div>
+          <div class="card-body">
+            <h3>Blockchain Technology in Supply Chain Management</h3>
+            <p>Exploring how distributed ledger technology can improve transparency, traceability, and efficiency in global supply chains.</p>
+            <div class="card-tags">
+              <span class="tag">Computer Science</span>
+              <span class="tag">Logistics</span>
+            </div>
+            <a href="thesis-detail.html?id=5" class="btn btn-outline">View Details</a>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card" data-category="health">
+          <div class="card-image">&#129657;</div>
+          <div class="card-body">
+            <h3>Mental Health Interventions in University Students</h3>
+            <p>A study on the effectiveness of digital mental health tools and counseling programs for undergraduate students.</p>
+            <div class="card-tags">
+              <span class="tag">Psychology</span>
+              <span class="tag">Health Sciences</span>
+            </div>
+            <a href="thesis-detail.html?id=6" class="btn btn-outline">View Details</a>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card" data-category="business">
+          <div class="card-image">&#128176;</div>
+          <div class="card-body">
+            <h3>Digital Marketing Strategies for Small Businesses</h3>
+            <p>Analyzing cost-effective digital marketing approaches that small businesses can use to compete with larger enterprises.</p>
+            <div class="card-tags">
+              <span class="tag">Marketing</span>
+              <span class="tag">Business</span>
+            </div>
+            <a href="thesis-detail.html?id=7" class="btn btn-outline">View Details</a>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card" data-category="arts">
+          <div class="card-image">&#127912;</div>
+          <div class="card-body">
+            <h3>The Influence of Social Media on Political Discourse</h3>
+            <p>Examining how platforms like Twitter and Facebook have transformed political communication and public opinion formation.</p>
+            <div class="card-tags">
+              <span class="tag">Political Science</span>
+              <span class="tag">Communications</span>
+            </div>
+            <a href="thesis-detail.html?id=8" class="btn btn-outline">View Details</a>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="card" data-category="engineering">
+          <div class="card-image">&#127959;&#65039;</div>
+          <div class="card-body">
+            <h3>Earthquake-Resistant Building Design Methods</h3>
+            <p>Comparative study of modern seismic design approaches and their effectiveness in protecting structures during earthquakes.</p>
+            <div class="card-tags">
+              <span class="tag">Civil Engineering</span>
+              <span class="tag">Architecture</span>
+            </div>
+            <a href="thesis-detail.html?id=9" class="btn btn-outline">View Details</a>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="card" data-category="science">
+          <div class="card-image">&#128300;</div>
+          <div class="card-body">
+            <h3>Gene Therapy Approaches for Genetic Disorders</h3>
+            <p>Review of current gene therapy techniques and their potential for treating inherited genetic conditions in humans.</p>
+            <div class="card-tags">
+              <span class="tag">Biotechnology</span>
+              <span class="tag">Genetics</span>
+            </div>
+            <a href="thesis-detail.html?id=10" class="btn btn-outline">View Details</a>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="card" data-category="arts">
+          <div class="card-image">&#128214;</div>
+          <div class="card-body">
+            <h3>Post-Colonial Literature and National Identity</h3>
+            <p>An exploration of how post-colonial literary works have shaped and reflected national identity in African nations.</p>
+            <div class="card-tags">
+              <span class="tag">Literature</span>
+              <span class="tag">Cultural Studies</span>
+            </div>
+            <a href="thesis-detail.html?id=11" class="btn btn-outline">View Details</a>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="card" data-category="health">
+          <div class="card-image">&#129658;</div>
+          <div class="card-body">
+            <h3>Telemedicine Adoption in Rural Healthcare</h3>
+            <p>Studying the barriers and enablers of telemedicine adoption in underserved rural communities across developing nations.</p>
+            <div class="card-tags">
+              <span class="tag">Public Health</span>
+              <span class="tag">Technology</span>
+            </div>
+            <a href="thesis-detail.html?id=12" class="btn btn-outline">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); padding: 60px 0; text-align: center; color: #fff;">
+    <div class="container">
+      <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Interested in a Similar Thesis?</h2>
+      <p style="color: #cbd5e0; margin-bottom: 25px;">Contact us to discuss your requirements and get a custom thesis written by our expert team.</p>
+      <a href="contact.html" class="btn btn-primary">Enquire Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Thesis<span style="color: var(--accent);">Hub</span></h4>
+          <p>Professional thesis writing services connecting students with expert academic writers. Quality work, fair pricing, and transparent communication.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Thesis Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Subjects</h4>
+          <ul>
+            <li><a href="gallery.html">Computer Science</a></li>
+            <li><a href="gallery.html">Business</a></li>
+            <li><a href="gallery.html">Engineering</a></li>
+            <li><a href="gallery.html">Sciences</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>&#128231; info@thesishub.com</li>
+            <li>&#128222; +1 (555) 123-4567</li>
+            <li>&#128172; WhatsApp Available</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ThesisHub. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
